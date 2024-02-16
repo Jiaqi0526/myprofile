@@ -1,0 +1,14 @@
+.Header_container {
+  width: 100%;
+  padding: 10px 0; 
+  margin: 0;
+  text-align: center; 
+}
+
+.Header_welcome {
+  font-size: 6vw;
+  font-weight: bold;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
