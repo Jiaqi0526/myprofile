@@ -1,12 +1,15 @@
 import './App.css';
-import Header from './components/Header';
-import Infocard from './components/Infocard';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <Infocard />
+      {/* navbar-header-fixed on the top */}
+      <Navbar />
+      {/* oppcupy aera to avoid content below not be blocked by navbar */}
+      <div style={{ height: '71px' }}></div>
+      
     </div>
   );
 }
