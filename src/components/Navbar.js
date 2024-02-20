@@ -20,13 +20,13 @@ function TopNavbar() {
     }, []);
 
     const navScrollStyle = {
-        backgroundColor: `rgba(255, 255, 255, ${scrollY > 100 ? 0.9 : 0})`,
-        color: scrollY > 100 ? "rgb(88, 150, 237)" : "white",
+        backgroundColor: `rgba(255, 255, 255, ${scrollY > 50 ? 0.9 : 0})`,
+        color: scrollY > 50 ? "rgb(88, 150, 237)" : "white",
         transition: "background-color 0.4s ease",
     };
 
     const navBrandStyle = {
-        color: scrollY > 100 ? "rgb(88, 150, 237)" : "white",
+        color: scrollY > 50 ? "rgb(88, 150, 237)" : "white",
         transition: "background-color 0.4s ease",
         fontSize: "30px"
     };
@@ -38,9 +38,9 @@ function TopNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <span className="nav-link-header">ABOUT ME</span>
-                        <span className="nav-link-header">PROJECTS</span>
-                        <span className="nav-link-header">CONTACTS</span>
+                        <span to="about" className="nav-link-header">ABOUT ME</span>
+                        <span to="#projects" className="nav-link-header">PROJECTS</span>
+                        <span to="#contact" className="nav-link-header">CONTACTS</span>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

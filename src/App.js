@@ -1,10 +1,12 @@
 import './App.css';
 import Cover from './components/Cover';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
     <div className='App'>
       <Cover />
+      <AboutMe />
       <p>1</p>
       <p>2</p>
       <p>3</p>
