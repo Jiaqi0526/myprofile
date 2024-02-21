@@ -1,0 +1,20 @@
+.projects-container {
+    background-color: rgb(237, 237, 237);
+}
+
+.projects-title {
+    font-size: 40px;
+    font-family: serif;
+    font-weight: bold;
+    padding: 100px 80px 50px 80px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.projects-list {
+    padding: 0 50px 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

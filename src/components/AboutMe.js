@@ -21,23 +21,27 @@ const About_me = () => {
                 Yes, let's change the world together!</p>
             </Row>
             <Row>
-              <h2>What I am doing</h2>
+              <h2>What I'm doing</h2>
               <p>I recently shared all of the resources and strategies I used to land many software engineer interviews.</p>
             </Row>
-            <Row>
+            <Row >
               <h2>Skills</h2>
             </Row>
             <Row>
-              <Col><h5>Languages</h5></Col>
+              <Col ><h5>Languages</h5></Col>
               <Col><h5>Frames</h5></Col>
               <Col><h5>Tools</h5></Col>
             </Row>
             <Row>
-              <Col>
-              <p>Java, Python, JavaScript</p>
+              <Col style={{ borderRight: '2px solid gray' }}>
+                <p>Java, Python, JavaScript</p>
+              </Col >
+              <Col style={{ borderRight: '2px solid gray' }}>
+                <p>React, Node.js</p>
               </Col>
-              <Col>React, Node.js</Col>
-              <Col>Git</Col>
+              <Col >
+                <p>Git</p>
+              </Col>
             </Row>
           </Container>
         </div>

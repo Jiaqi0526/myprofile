@@ -1,0 +1,8 @@
+.contact-text {
+    font-size: 40px;
+    font-family: serif;
+    font-weight: bold;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}

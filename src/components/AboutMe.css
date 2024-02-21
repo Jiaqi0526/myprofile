@@ -5,11 +5,11 @@
 .about-me-text {
     font-size: 40px;
     font-weight: bold;
-    font-family: Lora, serif;
+    font-family: serif;
     display: flex;
     justify-self: center;
     align-items: center;
-    margin: 70px auto;
+    margin: 100px auto;
 }
 
 .about-info-section {

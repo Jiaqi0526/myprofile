@@ -40,7 +40,7 @@ function TopNavbar() {
                     <Nav className="ms-auto">
                         <span to="about" className="nav-link-header">ABOUT ME</span>
                         <span to="#projects" className="nav-link-header">PROJECTS</span>
-                        <span to="#contact" className="nav-link-header">CONTACTS</span>
+                        <span to="#contact" className="nav-link-header">CONTACT</span>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
