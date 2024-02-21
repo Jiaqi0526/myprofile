@@ -1,8 +1,23 @@
+.contact-container {
+    padding-bottom: 200px;
+}
+
 .contact-text {
     font-size: 40px;
     font-family: serif;
     font-weight: bold;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center;
 }
+
+.btn-social-icon {
+    font-size: 30px;
+    color: #007bffd5;
+    margin: 0 10px;
+  }
+  
+  .btn-social-icon:hover {
+    color: #0056b3;
+  }

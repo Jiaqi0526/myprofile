@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Github",
+    "icon": "fa-brands fa-github",
+    "type": "social-media",
+    "url": "https://github.com/maribelduran"
+  },
+  {
+    "name": "Twitter",
+    "icon": "fa-brands fa-twitter",
+    "type": "social-media",
+    "url": "https://twitter.com/maribeldotduran"
+  },
+  {
+    "name": "Linkedin",
+    "icon": "fa-brands fa-linkedin-in",
+    "type": "social-media",
+    "url": "https://www.linkedin.com/in/maribelduran"
+  },
+  {
+    "name": "Email",
+    "icon": "fa-solid fa-envelope",
+    "type": "email",
+    "url": "mailto:maribelduranucm@gmail.com"
+  }
+]
