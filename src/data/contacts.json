@@ -3,7 +3,7 @@
     "name": "Github",
     "icon": "fa-brands fa-github",
     "type": "social-media",
-    "url": "https://github.com/maribelduran"
+    "url": "https://github.com/Jiaqi0526"
   },
   {
     "name": "Twitter",
@@ -15,12 +15,12 @@
     "name": "Linkedin",
     "icon": "fa-brands fa-linkedin-in",
     "type": "social-media",
-    "url": "https://www.linkedin.com/in/maribelduran"
+    "url": "https://www.linkedin.com/in/jiaqi-hu-060b2a2b5/"
   },
   {
     "name": "Email",
     "icon": "fa-solid fa-envelope",
     "type": "email",
-    "url": "mailto:maribelduranucm@gmail.com"
+    "url": "mailto:jiaqihu0526@gmail.com"
   }
 ]
