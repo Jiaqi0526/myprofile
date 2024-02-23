@@ -5,7 +5,7 @@ import Scrollchor from './ScrollchorItem.js';
 
 const Cover = () => {
     return (
-        <div className="background-image-container">
+        <div id='home'  className="background-image-container">
 
             <div className="content">
                 <Navbar />

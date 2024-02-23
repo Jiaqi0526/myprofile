@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import './AboutMe.css';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
@@ -6,8 +6,33 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 const About_me = () => {
+  const [isVisible_about, setIsVisible_about] = useState(false);
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer_about = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible_about(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    const currentRef = aboutRef.current;
+    if (currentRef) {
+      observer_about.observe(currentRef);
+    }
+
+    return () => {
+      if (currentRef) {
+        observer_about.unobserve(currentRef);
+      }
+    };
+  }, []);
+
   return (
-    <div id="about" className="about-container">
+    <div id="about" ref={aboutRef} className={`About_me ${isVisible_about ? 'fadeinup about-container' : 'about-container-none'}`}>
       <h2 className="about-me-text">ABOUT ME</h2>
       <div className="about-info-section">
         <div className="about-info-selfimg-container">
