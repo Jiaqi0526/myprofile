@@ -4,7 +4,7 @@ import contactList from '../data/contacts.json';
 
 const Contact = () => {
     return (
-        <div className='contact-container'>
+        <div id='contact' className='contact-container'>
             <h2 className='contact-text'>CONTACT</h2>
             <div className="row text-center">
                 {contactList.map(contact => (

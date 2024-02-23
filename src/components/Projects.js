@@ -5,7 +5,7 @@ import projectList from "../data/projects.json";
 
 const Projects = () => {
     return (
-        <div className='projects-container'>
+        <div id='projects' className='projects-container'>
             <h2 className='projects-title'>PROJECTS</h2>
             <div className="projects-list">
                 {

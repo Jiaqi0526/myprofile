@@ -1,26 +1,62 @@
 .background-image-container {
-    background-image: url('../../public/images/background.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+  background-image: url('../../public/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  text-align: center;
+  font-family: serif;
+}
+
+.cover-center-container {
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.arrow-down-container {
+  margin-top: auto;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  color: white;
+  font-size: 50px;
+  transition: color 0.3s;
+}
+
+.arrow:hover {
+  color: rgb(88, 150, 237);
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-1300%);
   }
-  
-  .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: serif;
+
+  100% {
+    transform: translateY(0);
   }
-  
+}
+
+.fall-effect {
+  animation: fall 0.8s ease-out;
+}

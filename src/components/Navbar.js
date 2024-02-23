@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Scrollchor from "./ScrollchorItem";
 import './Navbar.css';
 
 function TopNavbar() {
@@ -38,9 +39,9 @@ function TopNavbar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <span to="about" className="nav-link-header">ABOUT ME</span>
-                        <span to="#projects" className="nav-link-header">PROJECTS</span>
-                        <span to="#contact" className="nav-link-header">CONTACT</span>
+                        <Scrollchor to="#about" className="nav-link-header">ABOUT ME</Scrollchor>
+                        <Scrollchor to="#projects" className="nav-link-header">PROJECTS</Scrollchor>
+                        <Scrollchor to="#contact" className="nav-link-header">CONTACT</Scrollchor>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
