@@ -11,14 +11,17 @@ const Projects = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
+                    console.log('projects');
+                    console.log(isVisible);
                     setIsVisible(true);
                 }
             },
-            { threshold: 0.2 }
+            { threshold: 0.3 }
         );
 
         const currentRef = projectsRef.current;
         if (currentRef) {
+            console.log(isVisible);
             observer.observe(currentRef);
         }
 
@@ -30,7 +33,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <div id='projects' ref={projectsRef} className={`Projects ${isVisible ? 'fadeinup projects-container' : 'projects-container-none'}`}>
+        <div id='projects' ref={projectsRef} className={`Projects ${isVisible ? 'fadeinslide projects-container' : 'projects-container-none'}`}>
             <h2 className='projects-title'>PROJECTS</h2>
             <div className="projects-list">
                 {

@@ -28,18 +28,20 @@
     text-align: center;
 }
 
-@keyframes fadeinup {
+@keyframes fadein-about {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      /* transform: rotateY('360'); */
+      transform: translateY(200px);
     }
     to {
       opacity: 1;
+      /* transform: rotateX('0'); */
       transform: translateY(0);
     }
   }
   
-  .fadeinup {
-    animation: fadeinup 0.5s ease-in-out;
+  .fadein-about {
+    animation: fadein-about 1s ease-in-out;
   }
   
